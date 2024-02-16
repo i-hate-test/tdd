@@ -1,5 +1,6 @@
 package chap02;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +9,7 @@ public class PasswordStrengthMeterTest {
     private final PasswordStrengthMeter meter = new PasswordStrengthMeter();
     private void assertStrength(String password, PasswordStrength expStr) {
         PasswordStrength result = meter.meter(password);
-        assertEquals(expStr, result);
+        Assertions.assertEquals(expStr, result);
     }
 
     @Test
@@ -55,5 +56,10 @@ public class PasswordStrengthMeterTest {
     @Test
     void meetsOnlyContainUppercaseCriteria_Then_Weak() {
         assertStrength("ABZ", PasswordStrength.WEAK);
+    }
+
+    @Test
+    void meetsNoCriteria_Then_Weak() {
+        assertStrength("abc", PasswordStrength.WEAK);
     }
 }
