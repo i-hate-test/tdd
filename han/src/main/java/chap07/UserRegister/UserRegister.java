@@ -1,11 +1,11 @@
-package chapter07.UserRegister;
+package chap07.UserRegister;
 
-import chapter07.UserRegister.EmailNotifier.EmailNotifier;
-import chapter07.UserRegister.PasswordChecker.WeakPasswordChecker;
-import chapter07.UserRegister.PasswordChecker.WeakPasswordException;
-import chapter07.UserRegister.User.DupIdException;
-import chapter07.UserRegister.User.User;
-import chapter07.UserRegister.UserRepository.UserRepository;
+import chap07.UserRegister.EmailNotifier.EmailNotifier;
+import chap07.UserRegister.PasswordChecker.WeakPasswordChecker;
+import chap07.UserRegister.PasswordChecker.WeakPasswordException;
+import chap07.UserRegister.User.DupIdException;
+import chap07.UserRegister.User.User;
+import chap07.UserRegister.UserRepository.UserRepository;
 
 public class UserRegister {
   private WeakPasswordChecker passwordChecker;

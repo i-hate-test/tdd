@@ -1,4 +1,4 @@
-package chapter07.AuthDebit;
+package chap07.AuthDebit;
 
 public class AutoDebitReq extends AutoDebitInfo {
   public AutoDebitReq(String userId, String cardNumber) {

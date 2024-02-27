@@ -1,4 +1,4 @@
-package chapter07.UserRegister.PasswordChecker;
+package chap07.UserRegister.PasswordChecker;
 
 public interface WeakPasswordChecker {
   public void setWeak(boolean weak);

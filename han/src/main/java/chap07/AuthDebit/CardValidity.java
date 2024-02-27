@@ -1,4 +1,4 @@
-package chapter07.AuthDebit;
+package chap07.AuthDebit;
 
 public enum CardValidity {
   VALID,

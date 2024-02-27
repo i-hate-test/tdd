@@ -2,7 +2,7 @@ package chap07;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import chapter07.AuthDebit.*;
+import chap07.AuthDebit.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

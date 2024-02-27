@@ -1,4 +1,4 @@
-package chapter07.UserRegister.PasswordChecker;
+package chap07.UserRegister.PasswordChecker;
 
 public class StubWeakPasswordChecker implements WeakPasswordChecker {
   private boolean weak;

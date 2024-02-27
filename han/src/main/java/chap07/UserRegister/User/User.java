@@ -1,4 +1,4 @@
-package chapter07.UserRegister.User;
+package chap07.UserRegister.User;
 
 public class User {
   private String id;

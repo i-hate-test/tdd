@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 
-import chapter07.UserRegister.EmailNotifier.EmailNotifier;
-import chapter07.UserRegister.PasswordChecker.WeakPasswordChecker;
-import chapter07.UserRegister.UserRegister;
-import chapter07.UserRegister.UserRepository.UserRepository;
+import chap07.UserRegister.EmailNotifier.EmailNotifier;
+import chap07.UserRegister.PasswordChecker.WeakPasswordChecker;
+import chap07.UserRegister.UserRegister;
+import chap07.UserRegister.UserRepository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

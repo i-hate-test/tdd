@@ -1,4 +1,4 @@
-package chapter07.AuthDebit;
+package chap07.AuthDebit;
 
 import java.io.IOException;
 import java.net.URI;

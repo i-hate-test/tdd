@@ -1,4 +1,4 @@
-package chapter07.AuthDebit;
+package chap07.AuthDebit;
 
 public class AutoDebitRegister {
   private CardNumberValidator validator;

@@ -2,13 +2,13 @@ package chap07;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import chapter07.UserRegister.*;
-import chapter07.UserRegister.EmailNotifier.SpyEmailNotifier;
-import chapter07.UserRegister.PasswordChecker.StubWeakPasswordChecker;
-import chapter07.UserRegister.PasswordChecker.WeakPasswordException;
-import chapter07.UserRegister.User.DupIdException;
-import chapter07.UserRegister.User.User;
-import chapter07.UserRegister.UserRepository.MemoryUserRepository;
+import chap07.UserRegister.*;
+import chap07.UserRegister.EmailNotifier.SpyEmailNotifier;
+import chap07.UserRegister.PasswordChecker.StubWeakPasswordChecker;
+import chap07.UserRegister.PasswordChecker.WeakPasswordException;
+import chap07.UserRegister.User.DupIdException;
+import chap07.UserRegister.User.User;
+import chap07.UserRegister.UserRepository.MemoryUserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -24,7 +24,7 @@ public class UserRegisterTest {
     userRegister = new UserRegister(stubWeakPasswordChecker, fakeUserRepository, spyEmailNotifier);
   }
 
-  @DisplayName("약한 암호면 가입 실패")
+  @DisplayName("Fail when weak password")
   @Test
   void weakPassword() {
     stubWeakPasswordChecker.setWeak(true);
@@ -36,7 +36,7 @@ public class UserRegisterTest {
         });
   }
 
-  @DisplayName("같은 ID가 이미 존재하면 가입 실패")
+  @DisplayName("Fail when dup ID")
   @Test
   void dupIdExists() {
     fakeUserRepository.save(new User("id", "pw", "email@email.com"));
@@ -48,7 +48,7 @@ public class UserRegisterTest {
         });
   }
 
-  @DisplayName("같은 ID가 존재하지 않으면 가입 성공")
+  @DisplayName("Success when no dup ID and valid password")
   @Test
   void noDupId_RegisterSuccess() {
     userRegister.register("id", "pw", "email@email.com");
@@ -59,7 +59,7 @@ public class UserRegisterTest {
     assertEquals("email@email.com", savedUser.getEmail());
   }
 
-  @DisplayName("가입 시 메일 전송")
+  @DisplayName("Send mail when register success")
   @Test
   void whenRegisterThenSendMail() {
     userRegister.register("id", "pw", "email@email.com");

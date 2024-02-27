@@ -1,4 +1,4 @@
-package chapter07.UserRegister.EmailNotifier;
+package chap07.UserRegister.EmailNotifier;
 
 public class SpyEmailNotifier implements EmailNotifier {
   private boolean called;

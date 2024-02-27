@@ -1,6 +1,6 @@
-package chapter07.UserRegister.UserRepository;
+package chap07.UserRegister.UserRepository;
 
-import chapter07.UserRegister.User.User;
+import chap07.UserRegister.User.User;
 
 public interface UserRepository {
   public void save(User user);
