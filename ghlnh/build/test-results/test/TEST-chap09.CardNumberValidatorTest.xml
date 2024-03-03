@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chap09.CardNumberValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-27T13:43:09" hostname="DESKTOP-97VBBLB" time="4.773">
+  <properties/>
+  <testcase name="timeout()" classname="chap09.CardNumberValidatorTest" time="4.578"/>
+  <testcase name="valid()" classname="chap09.CardNumberValidatorTest" time="0.192"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[863 [Test worker] INFO org.eclipse.jetty.util.log - Logging initialized @3873ms to org.eclipse.jetty.util.log.Slf4jLog
+1185 [Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 11.0.15.1+2-LTS-10
+1264 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4baef92e{/__admin,null,AVAILABLE}
+1272 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4e3a37bb{/,null,AVAILABLE}
+1314 [Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@3fc87b42{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+1316 [Test worker] INFO org.eclipse.jetty.server.Server - Started @4328ms
+1719 [qtp6062729-23] INFO org.eclipse.jetty.server.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+4487 [Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@3fc87b42{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+4492 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4e3a37bb{/,null,UNAVAILABLE}
+4493 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4baef92e{/__admin,null,UNAVAILABLE}
+4500 [Test worker] WARN org.eclipse.jetty.util.thread.QueuedThreadPool - QueuedThreadPool[qtp6062729]@5c8289{STOPPING,8<=8<=10,i=2,q=5}[org.eclipse.jetty.util.thread.TryExecutor$$Lambda$317/0x000000010027c040@660f14ba] Couldn't stop Thread[qtp6062729-24,5,]
+4501 [Test worker] WARN org.eclipse.jetty.util.thread.QueuedThreadPool - QueuedThreadPool[qtp6062729]@5c8289{STOPPING,8<=8<=10,i=0,q=5}[org.eclipse.jetty.util.thread.TryExecutor$$Lambda$317/0x000000010027c040@660f14ba] Couldn't stop Thread[qtp6062729-18,5,]
+4503 [Test worker] WARN org.eclipse.jetty.util.thread.QueuedThreadPool - QueuedThreadPool[qtp6062729]@5c8289{STOPPING,8<=8<=10,i=0,q=5}[org.eclipse.jetty.util.thread.TryExecutor$$Lambda$317/0x000000010027c040@660f14ba] Couldn't stop Thread[qtp6062729-23,5,main]
+4541 [Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 11.0.15.1+2-LTS-10
+4550 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2d62fe5d{/__admin,null,AVAILABLE}
+4551 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@50178a57{/,null,AVAILABLE}
+4560 [Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@110baaf5{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+4561 [Test worker] INFO org.eclipse.jetty.server.Server - Started @7574ms
+4580 [qtp1657014491-36] INFO org.eclipse.jetty.server.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+4711 [Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@110baaf5{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+4711 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@50178a57{/,null,UNAVAILABLE}
+4712 [Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2d62fe5d{/__admin,null,UNAVAILABLE}
+4715 [Test worker] WARN org.eclipse.jetty.util.thread.QueuedThreadPool - QueuedThreadPool[qtp1657014491]@62c408db{STOPPING,8<=8<=10,i=6,q=6}[org.eclipse.jetty.util.thread.TryExecutor$$Lambda$317/0x000000010027c040@660f14ba] Couldn't stop Thread[qtp1657014491-36,5,]
+4716 [Test worker] WARN org.eclipse.jetty.util.thread.QueuedThreadPool - QueuedThreadPool[qtp1657014491]@62c408db{STOPPING,8<=8<=10,i=0,q=4}[org.eclipse.jetty.util.thread.TryExecutor$$Lambda$317/0x000000010027c040@660f14ba] Couldn't stop Thread[qtp1657014491-44,5,]
+]]></system-err>
+</testsuite>
